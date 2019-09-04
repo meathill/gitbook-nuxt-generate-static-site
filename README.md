@@ -1,2 +1,80 @@
-# gitbook-nuxt-generate-static-site
-A tutorial on how to generate static site via Nuxt.js in an existing Vue Cli project.
+使用 Nuxt.js 发布纯静态网站
+========
+
+前言
+========
+
+如果开发需要复杂交互的 Web 应用，我们多半会选择 SPA；如果要做提供内容资讯的网站，更有利于 SEO、加载速度更快的服务器端渲染（Server-Side Rendering，SSR）自然是大家的首选；那么，如果是一个 CMS 生成纯静态网页呢？
+
+前阵子公司官网升级，我尝试用 Webpack 多页配置，成功的升级了工具链，效果很理想。我还写了一篇 Chat 来分享这期间的收获：[《升级工具链吧！使用 Webpack 开发企业官网》](https://gitbook.cn/new/gitchat/activity/5cf7ee6b7388a119e2a74d02)。我选择用 Vue 开发一个 CMS，然后用 Nuxt.js 生成纯静态 HTML。这就需要在 Vue CLI 项目的基础上，添加 Nuxt.js 渲染。我本以为只是举手之劳，没想到折腾了半天才搞定。本篇 Chat，就会分享我在这个过程中收获的心得：
+
+1. Nuxt.js 和 Vue 项目的区别
+2. Nuxt.js 配置
+3. 生成静态页，添加 SEO 关键信息
+4. 利用 Hooks 注入静态页 JS
+
+本次分享大纲如下：
+
+1. 网页形态的历史
+2. Vue CMS 的产品形态
+3. 了解 Nuxt.js
+4. 生成静态页的相关配置
+5. 添加 SEO 关键信息
+6. 注入专有 JS
+7. 使用 CDN 部署网站
+
+
+面向读者
+--------
+
+1. 初中级开发者，熟悉 Vue
+2. 希望了解静态化和 Nuxt.js
+
+名词及约定
+--------
+
+1. 我假定所有读者都很熟悉 jQuery 的用法和 API，文中不再解释。
+2. 文中的“模式”和“设计模式”基本上都指“设计模式”。
+3. 所有模式的中文译名以《设计模式：可复用面向对象软件的基础》一书中为准。我会在章节开始处写明其英文名称。
+
+其它约定：
+
+1. 为节省时间，范例代码中的 HTML 会以 pug 书写，这种语言很容易阅读，文中也用不到高级语法，应该问题不大。另外，如果你还在写原生 HTML 或 CSS，我建议你尽快切换到新语言。
+2. 范例代码以 ES6 为基础，也会使用 ES2017+ 新增语法，如果你对这些“新”语法不熟悉，附录里有一些资源方便你学习。
+
+名词：
+
+1. 使用者：指用 jQuery 开发业务逻辑的人，也就是你我。
+2. 经典(版)：指《设计模式》中的内容
+
+文中代码的目标环境：
+
+1. jQuery >= 3.4.1
+5. Node.js >= 10.15
+
+作者介绍
+-------
+
+大家好，我叫翟路佳，花名“肉山”，这个名字跟 Dota 没关系，从高中起伴随我到现在。
+
+我热爱编程，喜欢学习，喜欢分享，从业十余年，投入的比较多，学习积累到的也比较多，对前端方方面面都有所了解，希望能与大家分享。
+
+我兴趣爱好比较广泛，尤其喜欢旅游，欢迎大家相互交流。
+
+我目前就职于 OpenResty Inc.，定居广州。
+
+你可以在这里找到我：
+
+* [博客](https://blog.meathill.com)
+* [微博](https://weibo.com/meathill)
+* [GitChat](https://gitbook.cn/gitchat/author/593cb520ef8d9c2863173543)
+
+或者通过 [邮件](mailto:meathill@gmail.com) 联系我。
+
+--------
+
+限于个人能力、知识视野、文字技术不足，文中难免有疏漏差错，如果你有任何疑问，欢迎在任何时间通过任何形式向我提出，我一定尽快答复修改。
+
+[GitHub issue](https://github.com/meathill/gitchat-design-patterns-in-jquery/issues)。
+
+再次感谢大家。
