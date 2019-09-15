@@ -9,6 +9,6 @@
 * [重构现有项目](refactor.md)
 * [生成静态页的相关配置](config.md)
 * [添加 SEO 关键信息](seo-meta.md)
-* [注入专有 JS](inject-js.md)
+* [利用钩子注入 JS](inject-js.md)
 * [后记 & 附录](appendix.md)
 
