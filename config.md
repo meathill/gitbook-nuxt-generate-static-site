@@ -1,13 +1,11 @@
 生成静态页的相关配置
 ======
 
-接下来准备介绍配置。其实配置本身可说的部分不多，之所以铺垫这么久，正是因为前面那些内容都是我踩过的坑。当原本打算一两个小时搞定的事情，最后花费5、6个小时才摸索出来时，我就想，如果这些知识点我以前就知道，那该多好。
+接下来讲解配置项。其实配置本身可说的部分不多，之所以铺垫这么久，正是因为我踩了很多坑。原本打算一两个小时搞定的事情，最后花费5、6个小时才摸索出来。后来我想，如果这些知识点我以前就知道，那该多好。所以才有了前面的内容。
 
 好吧，言归正传，最终的配置如下：
 
 ```js
-/* global __dirname */
-
 const path = require('path');
 const {
   promises: {
@@ -84,7 +82,7 @@ module.exports = {
         const from = path.resolve(__dirname, 'src/footer.js');
         const to = path.resolve(__dirname, 'static/footer.js');
         await copyFile(from, to);
-        console.log('[Salboy : Nuxt] Static files copied.');
+        console.log('[CMS : Nuxt] Static files copied.');
       },
     },
   },

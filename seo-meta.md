@@ -66,6 +66,6 @@ module.exports = {
 }
 ```
 
-好像没什么可说的……我暂时只用到标题模板，比如一个页面标题是“今天晚上吃什么？”，那么就会渲染成：“今天晚上吃什么？ - Meathill”。其它选项大家可以参考 [Vue Meta > API > metaInfo properties](https://vue-meta.nuxtjs.org/api/#base)。
+好像没什么可说的……我暂时只用到标题模板，比如一个页面标题是“今天晚上吃什么？”，就会渲染成：“今天晚上吃什么？ - Meathill”。其它选项大家可以参考 [Vue Meta > API > metaInfo properties](https://vue-meta.nuxtjs.org/api/#base)。
 
 渲染静态页的时候，vue-meta 似乎不是必须的；换言之，我一开始用了 vue-meta，没有配 `head`，也没有输出需要的 meta 信息。

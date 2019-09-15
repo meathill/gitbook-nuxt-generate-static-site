@@ -3,7 +3,6 @@
 
 * [前言](README.md)
 * [网页形态的历史](web-history.md)
-    * [Nuxt.js 的定位](web-history.md#nuxt)
 * [Vue CMS 的产品形态](cms-product-design.md)
 * [了解 Nuxt.js](nuxt.md)
 * [重构现有项目](refactor.md)
