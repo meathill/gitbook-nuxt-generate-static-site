@@ -1,0 +1,365 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Vue CMS 的产品形态 · 使用 Nuxt.js 发布纯静态网站</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="nuxt.html" />
+    
+    
+    <link rel="prev" href="web-history.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="web-history.html">
+            
+                <a href="web-history.html">
+            
+                    
+                    网页形态的历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="cms-product-design.html">
+            
+                <a href="cms-product-design.html">
+            
+                    
+                    Vue CMS 的产品形态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="nuxt.html">
+            
+                <a href="nuxt.html">
+            
+                    
+                    了解 Nuxt.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="refactor.html">
+            
+                <a href="refactor.html">
+            
+                    
+                    重构现有项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    生成静态页的相关配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="seo-meta.html">
+            
+                <a href="seo-meta.html">
+            
+                    
+                    添加 SEO 关键信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="inject-js.html">
+            
+                <a href="inject-js.html">
+            
+                    
+                    利用钩子注入 JS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="appendix.html">
+            
+                <a href="appendix.html">
+            
+                    
+                    后记 & 附录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Vue CMS 的产品形态</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="vue-cms-&#x7684;&#x4EA7;&#x54C1;&#x5F62;&#x6001;">Vue CMS &#x7684;&#x4EA7;&#x54C1;&#x5F62;&#x6001;</h1>
+<p>&#x56DE;&#x987E;&#x5B8C;&#x5386;&#x53F2;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x770B;&#x4E1A;&#x52A1;&#x9700;&#x6C42;&#x3002;</p>
+<p>&#x770B;&#x8FC7;&#x6211;&#x4E0A;&#x4E00;&#x6B21; Chat <a href="https://gitbook.cn/gitchat/activity/5cf7ee6b7388a119e2a74d02" target="_blank">&#x300A;&#x5347;&#x7EA7;&#x5DE5;&#x5177;&#x94FE;&#x5427;&#xFF01;&#x4F7F;&#x7528; Webpack &#x5F00;&#x53D1;&#x4F01;&#x4E1A;&#x5B98;&#x7F51;&#x300B;</a>&#x7684;&#x540C;&#x5B66;&#x5E94;&#x8BE5;&#x77E5;&#x9053;&#xFF0C;&#x4E00;&#x5207;&#x90FD;&#x6E90;&#x81EA;&#x6211;&#x5382;&#x7684;&#x5B98;&#x7F51;&#x8981;&#x6539;&#x7248;&#x3002;</p>
+<p>&#x6211;&#x5382;<a href="https://openresty.com.cn/" target="_blank">&#x5B98;&#x7F51;</a> v1.0 &#x91C7;&#x7528;&#x7684;&#x662F;&#x524D;&#x6587;&#x4E2D;&#x201C;&#x8FDC;&#x53E4;&#x65F6;&#x671F;&#x201D;&#x7684;&#x6A21;&#x5F0F;&#xFF0C;&#x7531;&#x8BBE;&#x8BA1;&#x5E08;&#x8BBE;&#x8BA1;&#x3001;&#x5236;&#x4F5C;&#x5B8C;&#x7F51;&#x9875;&#x4E4B;&#x540E;&#xFF0C;&#x76F4;&#x63A5;&#x628A;&#x7EAF;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x4E0A;&#x4F20;&#x5230;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x7136;&#x540E;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x597D;&#x5904;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x7B80;&#x5355;&#x597D;&#x64CD;&#x4F5C;&#xFF0C;&#x5BF9;&#x4EBA;&#x5458;&#x8981;&#x6C42;&#x4F4E;</li>
+<li>&#x8BBF;&#x95EE;&#x901F;&#x5EA6;&#x5FEB;&#xFF0C;&#x5BF9;&#x673A;&#x5668;&#x914D;&#x7F6E;&#x8981;&#x6C42;&#x4F4E;</li>
+<li>&#x5BF9;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x53CB;&#x597D;</li>
+</ol>
+<p>&#x4F46;&#x662F;&#x4E5F;&#x6709;&#x5F88;&#x591A;&#x4E0D;&#x8DB3;&#xFF1A;</p>
+<ol>
+<li>&#x7EAF;&#x9759;&#x6001;&#xFF0C;&#x4E0D;&#x5229;&#x4E8E;&#x8C03;&#x6574;&#x5185;&#x5BB9;</li>
+<li>&#x4E0D;&#x5229;&#x4E8E; i18n&#xFF0C;&#x6CA1;&#x6709;&#x591A;&#x8BED;&#x8A00;&#x7248;</li>
+</ol>
+<p>&#x8FD9;&#x4E9B;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x5728; v2.0 &#x65F6;&#x8FDB;&#x884C;&#x4E86;&#x4FEE;&#x6B63;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x6211;&#x5F15;&#x5165; Gulp &#x505A;&#x6279;&#x5904;&#x7406;&#xFF0C;&#x589E;&#x52A0;&#x4E86;&#x201C;&#x53D1;&#x5E03;&#x201D;&#x73AF;&#x8282;&#xFF0C;&#x867D;&#x7136;&#x6700;&#x7EC8;&#x8FD8;&#x662F;&#x90E8;&#x7F72;&#x7EAF;&#x9759;&#x6001;&#x5185;&#x5BB9;&#xFF0C;&#x4F46;&#x662F;&#x5185;&#x5BB9;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x8C03;&#x6574;&#xFF0C;&#x4E5F;&#x901A;&#x8FC7; DOM &#x67E5;&#x627E;&#xFF0C;&#x5B9E;&#x73B0;&#x4E86; i18n&#xFF0C;&#x540C;&#x6B65;&#x63D0;&#x4F9B;&#x4E2D;&#x82F1;&#x4E24;&#x4E2A;&#x8BED;&#x8A00;&#x3002;</p>
+<p>&#x65B0;&#x7248;&#x672C;&#x4E0A;&#x7EBF;&#x4E00;&#x5E74;&#x534A;&#xFF0C;&#x6548;&#x679C;&#x4E0D;&#x9519;&#xFF0C;&#x4F46;&#x4E5F;&#x6709;&#x5F88;&#x591A;&#x4E0D;&#x8DB3;&#xFF1A;</p>
+<ol>
+<li>&#x9700;&#x8981;&#x5F00;&#x53D1;&#x8005;&#x624B;&#x52A8;&#x7BA1;&#x7406;&#x6240;&#x6709;&#x8D44;&#x6E90;&#xFF0C;&#x5F88;&#x7D2F;</li>
+<li>&#x53D1;&#x5E03;&#x811A;&#x672C;&#x5F88;&#x591A;&#x5F88;&#x590D;&#x6742;&#xFF0C;&#x4E0D;&#x4FBF;&#x4E8E;&#x7406;&#x89E3;&#xFF1B;Gulp &#x91C7;&#x7528; stream &#x6A21;&#x5F0F;&#xFF0C;&#x6CA1;&#x641E;&#x8FC7;&#x7684;&#x65B0;&#x4EBA;&#x5F88;&#x96BE;&#x63A5;&#x624B;</li>
+<li>&#x6CA1;&#x6709;&#x597D;&#x7684;&#x5F00;&#x53D1;&#x73AF;&#x5883;</li>
+</ol>
+<p>&#x4E8E;&#x662F;&#xFF0C;&#x5F53;&#x6574;&#x4E2A;&#x9875;&#x9762;&#x5185;&#x5BB9;&#x90FD;&#x8981;&#x66F4;&#x65B0;&#x65F6;&#xFF0C;&#x6211;&#x51B3;&#x5B9A;&#x5347;&#x7EA7;&#x5230; v3.0&#x3002;&#x8FD9;&#x6B21;&#x4F7F;&#x7528; Webpack &#x5DE5;&#x5177;&#x94FE;&#xFF0C;&#x91C7;&#x7528;&#x591A;&#x9875;&#x9762;&#x6A21;&#x5F0F;&#xFF0C;&#x914D;&#x5408; Pug &#x7684;&#x53EF;&#x7F16;&#x7A0B;&#x7279;&#x6027;&#xFF0C;&#x66F4;&#x597D;&#x7684;&#x5B9E;&#x73B0;&#x4E86;&#x6700;&#x7EC8;&#x6548;&#x679C;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x914D;&#x5408; webpack-dev-server &#x65B9;&#x4FBF;&#x7684;&#x5728;&#x672C;&#x5730;&#x5F00;&#x53D1;&#x3002;&#x65B0;&#x7248;&#x672C;&#x5927;&#x5927;&#x6539;&#x5584;&#x4E86;&#x5F00;&#x53D1;&#x6548;&#x7387;&#x3002;&#x65B0;&#x540C;&#x4E8B;&#x6253;&#x5F00;&#x9879;&#x76EE;&#x770B;&#x4E86;&#x770B; Webpack &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5F88;&#x5FEB;&#x5C31;&#x641E;&#x660E;&#x767D;&#x5B83;&#x662F;&#x600E;&#x4E48;&#x5DE5;&#x4F5C;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x505A;&#x5DE5;&#x4F5C;&#xFF0C;&#x5E94;&#x8BE5;&#x4ECE;&#x54EA;&#x91CC;&#x5165;&#x624B;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#x6B63;&#x5982;&#x300A;&#x77DB;&#x76FE;&#x8BBA;&#x300B;&#x6240;&#x8BF4;&#xFF0C;&#x5F53;&#x4E3B;&#x8981;&#x77DB;&#x76FE;&#x88AB;&#x89E3;&#x51B3;&#xFF0C;&#x6B21;&#x8981;&#x77DB;&#x76FE;&#x5C31;&#x4F1A;&#x53D8;&#x6210;&#x65B0;&#x7684;&#x4E3B;&#x8981;&#x77DB;&#x76FE;&#x3002;&#x6B64;&#x523B;&#xFF0C;&#x65B0;&#x7684;&#x95EE;&#x9898;&#x51FA;&#x73B0;&#xFF1A;&#x4E13;&#x4E1A;&#x7684;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x80FD;&#x5F88;&#x5FEB;&#x6478;&#x6E05;&#x9879;&#x76EE;&#x7ED3;&#x6784;&#xFF0C;&#x4F46;&#x5BF9;&#x4E8E;&#x540E;&#x7AEF;&#x540C;&#x4E8B;&#x6765;&#x8BF4;&#xFF0C;&#x672A;&#x77E5;&#x7684;&#x65B0;&#x6982;&#x5FF5;&#x8FD8;&#x662F;&#x5F88;&#x591A;&#x3002;&#x6559;&#x4F1A;&#x4ED6;&#x4EEC;&#x7406;&#x89E3;&#x6240;&#x6709;&#x6846;&#x67B6;&#x3001;&#x7C7B;&#x5E93;&#x3001;&#x5DE5;&#x5177;&#x6CA1;&#x4EC0;&#x4E48;&#x610F;&#x4E49;&#xFF0C;&#x5982;&#x679C;&#x80FD;&#x591F;&#x7ED9;&#x4ED6;&#x4EEC;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x53EF;&#x64CD;&#x4F5C;&#x7684; UI&#xFF0C;&#x90A3;&#x624D;&#x80FD;&#x771F;&#x6B63;&#x63D0;&#x9AD8;&#x6548;&#x7387;&#x3002;&#x6BD4;&#x5982; <code>npm run edit</code>&#xFF0C;&#x7136;&#x540E;&#x6D4F;&#x89C8;&#x5668;&#x5C31;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x3002;&#x4ED6;&#x4EEC;&#x6309;&#x9700;&#x7F16;&#x8F91;&#x540E;&#xFF0C;&#x4FDD;&#x5B58;&#xFF0C;&#x63D0;&#x4EA4;&#x4ED3;&#x5E93;&#xFF0C;&#x53D1;&#x5E03;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x6D41;&#x7A0B;&#x624D;&#x662F;&#x771F;&#x6B63;&#x8981;&#x8FFD;&#x6C42;&#x7684;&#x6D41;&#x7A0B;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x6700;&#x5408;&#x9002;&#x7684;&#x505A;&#x6CD5;&#x5C31;&#x662F;&#x7528; Vue &#x5B9E;&#x73B0;&#x4E00;&#x4E9B;&#x7F16;&#x8F91;&#x5668;&#x7EC4;&#x4EF6;&#xFF0C;&#x5B83;&#x4EEC;&#x6709;&#x4E24;&#x79CD;&#x5F62;&#x6001;&#xFF1A;&#x7F16;&#x8F91;&#xFF0C;&#x9759;&#x6001;&#x3002;&#x7F16;&#x8F91;&#x6001;&#x5C31;&#x4E0D;&#x7528;&#x89E3;&#x91CA;&#x4E86;&#xFF1B;&#x6211;&#x4EEC;&#x53EA;&#x8981;&#x628A;&#x9759;&#x6001;&#x7684; HTML &#x4FDD;&#x5B58;&#x4E0B;&#x6765;&#xFF0C;&#x751F;&#x6210;&#x9759;&#x6001;&#x9875;&#xFF0C;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x597D;&#x7684;&#xFF0C;&#x73B0;&#x5728;&#x9700;&#x6C42;&#x5DF2;&#x7ECF;&#x51FA;&#x6765;&#x4E86;&#xFF1A;</p>
+<ol>
+<li>&#x5DF2;&#x6709;&#x4E00;&#x4E2A; Vue &#x9879;&#x76EE;</li>
+<li>&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x5927;&#x90E8;&#x5206;&#x529F;&#x80FD;&#x7531; SPA &#x63D0;&#x4F9B;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x9759;&#x6001;&#x5316;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x9884;&#x6E32;&#x67D3;</li>
+<li>&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x90E8;&#x5206;&#x8DEF;&#x7531;&#x9700;&#x8981;&#x751F;&#x6210;&#x9759;&#x6001;&#x9875;</li>
+<li>&#x90E8;&#x7F72;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x90E8;&#x7F72;&#x9759;&#x6001;&#x9875;&#x548C;&#x5176;&#x5F15;&#x7528;&#x7684;&#x8D44;&#x6E90;</li>
+</ol>
+<p>&#x770B;&#x5230;&#x8FD9;&#x4E2A;&#x9700;&#x6C42;&#xFF0C;&#x6211;&#x60F3;&#x5927;&#x591A;&#x6570;&#x5173;&#x6CE8;&#x524D;&#x7AEF;&#x7684;&#x540C;&#x5B66;&#x53EF;&#x80FD;&#x8DDF;&#x6211;&#x4E00;&#x6837;&#xFF0C;&#x7B2C;&#x4E00;&#x53CD;&#x5E94;&#x5C31;&#x662F;&#xFF1A;&#x5E94;&#x8BE5;&#x627E;&#x4E00;&#x4E2A; SSR &#x6846;&#x67B6;&#xFF0C;&#x6DFB;&#x52A0;&#x5230;&#x73B0;&#x6709;&#x9879;&#x76EE;&#x4E2D;&#x3002;&#x90A3;&#x4E48;&#xFF0C;&#x5C31;&#x9009;&#x6700;&#x51FA;&#x540D;&#x7684; Nuxt.js &#x5427;&#xFF0C;&#x8FD9;&#x4E2A;&#x6846;&#x67B6;&#x7684;&#x4F5C;&#x8005;&#x8FD8;&#x8DDF; Vue &#x7684;&#x4F5C;&#x8005;&#x4E00;&#x8D77;&#x770B; NBA &#x5462;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="web-history.html" class="navigation navigation-prev " aria-label="Previous page: 网页形态的历史">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="nuxt.html" class="navigation navigation-next " aria-label="Next page: 了解 Nuxt.js">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Vue CMS 的产品形态","level":"1.3","depth":1,"next":{"title":"了解 Nuxt.js","level":"1.4","depth":1,"path":"nuxt.md","ref":"nuxt.md","articles":[]},"previous":{"title":"网页形态的历史","level":"1.2","depth":1,"path":"web-history.md","ref":"web-history.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"使用 Nuxt.js 发布纯静态网站","language":"zh","gitbook":"*","description":"以已有的 Vue SPA 为基础，为其增加发布纯静态页面的功能。会介绍 Nuxt.js 的设计思路，及如何结合这个思路来达成我们的目标。"},"file":{"path":"cms-product-design.md","mtime":"2019-12-21T02:22:27.222Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-22T13:25:03.055Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,5 @@
+{
+  "title": "使用 Nuxt.js 发布纯静态网站",
+  "description": "以已有的 Vue SPA 为基础，为其增加发布纯静态页面的功能。会介绍 Nuxt.js 的设计思路，及如何结合这个思路来达成我们的目标。",
+  "language": "zh"
+}
