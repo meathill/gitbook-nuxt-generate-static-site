@@ -31,4 +31,6 @@ module.exports = {
 }
 ```
 
+<adsense />
+
 这段代码应该很容易看懂吧，就是一个简单的复制。不过需要注意，`copyFile` 函数是 v10 之后添加到 Node.js 里的，而预 promise 化的 `fs.promises` 是 v12 之后添加的。

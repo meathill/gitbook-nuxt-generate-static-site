@@ -72,6 +72,8 @@ export default {
 
 这里需要注意，Nuxt.js 并不会调用 webpack 去处理这里的 JS，所以我们需要人工控制它们的路径。下一章你会看到，我是直接复制文件到 `static` 文件夹的，所以它的路径也就写成固定的 `/footer.js`。如果你有 `publicPath` 之类的需求，还要自己处理一下哦。
 
+<adsense />
+
 配置文件
 --------
 

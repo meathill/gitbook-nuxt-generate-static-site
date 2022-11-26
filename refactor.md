@@ -19,6 +19,8 @@
 
 我们当然可以继续使用这个入口，不过考虑到静态页面的依赖跟 CMS 页面的需求不同，我认为重新定义一个入口比较好。在本项目中，我把两者都需要的依赖放在 `src/App.vue` 里，比如 Bootstrap 的样式；只有 CMS 需要的依赖放在 `src/main.js` 里，比如 CMS 路由和 Vuex。然后在 `nuxt.config.js` 里重新配置路由，以 `src/App.vue` 作为入口。
 
+<adsense />
+
 `head`
 --------
 

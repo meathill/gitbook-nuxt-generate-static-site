@@ -29,6 +29,8 @@ Nuxt.js 里面集成了 Vue 全家桶和 Webpack 全家桶。好消息是这些�
 
 Nuxt.js 有一套默认目录结构，使用这套目录结构可以最大限度的利用 Nuxt.js 的工作机制，不过对于我们来说，暂时排不上用场，也不需要关注。
 
+<adsense />
+
 `nuxt generate`
 --------
 

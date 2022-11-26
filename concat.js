@@ -1,4 +1,4 @@
-const {promises: {readFile, writeFile}} = require('fs');
+const {readFile, writeFile} = require('fs/promises');
 
 (async () => {
   const summary = await readFile('./SUMMARY.md', 'utf8');

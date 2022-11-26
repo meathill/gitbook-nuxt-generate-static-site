@@ -91,4 +91,6 @@ module.exports = {
 
 这里需要介绍一下 `generate` 属性，它的详细文档在这里：[Nuxt.js > Configuration > The generate Property](https://nuxtjs.org/api/configuration-generate)。它里面的信息是专门为 `nuxt generate` 准备的，但是只配置这个属性是不够的。
 
+<adsense />
+
 它的 `routes` 属性很重要，里面是所有要渲染的静态页。如我的例子所示，这里也可以使用异步函数，动态获取要渲染的页面列表，然后逐个渲染。Nuxt 还提供了一个优化方案，可以批量渲染页面，而不需要每次都访问数据源，不过我暂时没有用到。

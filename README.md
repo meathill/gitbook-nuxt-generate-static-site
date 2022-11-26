@@ -1,6 +1,14 @@
 使用 Nuxt.js 发布纯静态网站
 ========
 
+::: tip
+### 新作创作中
+
+时隔三年，Nuxt.js v3 已经发布，我也在创作新的 Nuxt.js 网站教程，敬请期待。
+
+代码仓库：https://github.com/meathill/mui-resume 欢迎关注。
+:::
+
 前言
 ========
 
@@ -71,6 +79,8 @@
 * [GitChat](https://gitbook.cn/gitchat/author/593cb520ef8d9c2863173543)
 
 或者通过 [邮件](mailto:meathill@gmail.com) 联系我。
+
+<adsense />
 
 --------
 
