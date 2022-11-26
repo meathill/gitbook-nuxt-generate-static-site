@@ -1,5 +1,5 @@
 <template>
-  <ins :key="currentPath" class="adsbygoogle"
+  <ins class="adsbygoogle"
        style="display:block; text-align:center;"
        data-ad-layout="in-article"
        data-ad-format="fluid"
@@ -8,9 +8,8 @@
 </template>
 
 <script setup>
-import {ref, onMounted} from "vue";
+import { onMounted } from "vue";
 
-const currentPath = ref(location.href);
 onMounted(() => {
   window.adsbygoogle = window.adsbygoogle || [];
   window.adsbygoogle.push({});
