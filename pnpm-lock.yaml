@@ -4,13 +4,15 @@ specifiers:
   '@vuepress/plugin-google-analytics': 2.0.0-beta.53
   '@vuepress/plugin-register-components': 2.0.0-beta.53
   '@vuepress/theme-default': ^2.0.0-beta.53
+  vue: ^3.2.45
   vuepress: 2.0.0-beta.53
 
 devDependencies:
   '@vuepress/plugin-google-analytics': 2.0.0-beta.53
   '@vuepress/plugin-register-components': 2.0.0-beta.53
   '@vuepress/theme-default': 2.0.0-beta.53
-  vuepress: 2.0.0-beta.53
+  vue: 3.2.45
+  vuepress: 2.0.0-beta.53_vue@3.2.45
 
 packages:
 
@@ -1585,7 +1587,7 @@ packages:
     dev: true
 
   /to-fast-properties/2.0.0:
-    resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
+    resolution: {integrity: sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=}
     engines: {node: '>=4'}
     dev: true
 
@@ -1690,7 +1692,7 @@ packages:
       '@vue/shared': 3.2.45
     dev: true
 
-  /vuepress-vite/2.0.0-beta.53:
+  /vuepress-vite/2.0.0-beta.53_vue@3.2.45:
     resolution: {integrity: sha512-kITVMM+LcV5mDQXQXAKgK0adAGMm7oyPls6HPTLM9gUvpSs2A19zfwf8zFoxIF9X+ANay4Tg87egtnJOcp8Wcg==}
     hasBin: true
     peerDependencies:
@@ -1701,6 +1703,7 @@ packages:
       '@vuepress/cli': 2.0.0-beta.53
       '@vuepress/core': 2.0.0-beta.53
       '@vuepress/theme-default': 2.0.0-beta.53
+      vue: 3.2.45
     transitivePeerDependencies:
       - '@vue/composition-api'
       - less
@@ -1712,11 +1715,11 @@ packages:
       - ts-node
     dev: true
 
-  /vuepress/2.0.0-beta.53:
+  /vuepress/2.0.0-beta.53_vue@3.2.45:
     resolution: {integrity: sha512-swnH25oCHAE0ZIXBAp4gaalIsrxLLn+mguekOybwLcTNQUgbcqf8EXwVxOgN663JzPuHcxRAJg3nN/swKsFifQ==}
     hasBin: true
     dependencies:
-      vuepress-vite: 2.0.0-beta.53
+      vuepress-vite: 2.0.0-beta.53_vue@3.2.45
     transitivePeerDependencies:
       - '@vue/composition-api'
       - '@vuepress/client'
