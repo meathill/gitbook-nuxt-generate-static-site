@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-31071e3e","path":"/config.html","title":"生成静态页的相关配置","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1669466963000,"contributors":[{"name":"Meathill","email":"meathill@gmail.com","commits":3}]},"filePathRelative":"config.md"}');export{t as data};

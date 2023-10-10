@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-809b6740","path":"/cms-product-design.html","title":"Vue CMS 的产品形态","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1669466963000,"contributors":[{"name":"Meathill","email":"meathill@gmail.com","commits":4}]},"filePathRelative":"cms-product-design.md"}');export{t as data};
